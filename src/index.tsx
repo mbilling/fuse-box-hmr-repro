@@ -1,9 +1,13 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import * as App from './App';
+import * as Parse from 'parse';
 
+import App = require('./app/AppAccount');
+//import App = require('./app/App');
 
-document.addEventListener("DOMContentLoaded", function(event) { 
-   ReactDOM.render(<App/>, document.getElementById('react'));
-});
+//require("./css/default.less");
 
+Parse.initialize('key', undefined);
+Parse.serverURL = location.protocol + '//' + location.host + '/parse';
+
+ReactDOM.render(<App />, document.getElementById('react'));

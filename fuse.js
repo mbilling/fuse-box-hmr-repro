@@ -9,10 +9,10 @@ let fuse = FuseBox.FuseBox.init({
       outFile: "./build/bundle.js.map",
    },
    plugins: [
+      FuseBox.JSONPlugin(),
       FuseBox.EnvPlugin({ NODE_ENV: "production" }),
        [FuseBox.LESSPlugin(), FuseBox.CSSPlugin()]
-   ],
-   cache: false
+   ]
 })
 
-fuse.devServer(">index.tsx");
+fuse.devServer(">index.tsx", {port: 5555});
