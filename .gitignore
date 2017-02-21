@@ -1,0 +1,5 @@
+.fusebox
+.vscode
+build/*.*
+!build/index.htm
+node_modules

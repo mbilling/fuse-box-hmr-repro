@@ -1,0 +1,19 @@
+{
+   "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "noImplicitAny": false,
+      "removeComments": true,
+      "sourceMap": true,
+      "jsx": "react",
+      "outDir": "build",
+      "watch": true,
+      "allowSyntheticDefaultImports": true,
+      "allowJs": true
+   },
+   "include": [
+      "*",
+      "./src"
+   ]
+}
